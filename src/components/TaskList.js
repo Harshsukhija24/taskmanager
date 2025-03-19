@@ -59,7 +59,6 @@ const TaskList = () => {
     setError(null);
     try {
       const data = await taskService.getAllTasks();
-      // Enhance the data with descriptions for demo purposes
       const enhancedData = data.slice(0, 20).map((task) => ({
         ...task,
         description:
@@ -125,8 +124,6 @@ const TaskList = () => {
         showSnackbar("Task updated successfully", "success");
       } else {
         const newTask = await taskService.createTask(formData);
-        // Since JSONPlaceholder doesn't actually create tasks in the database,
-        // we'll simulate it by adding it to our local state with our description
         setTasks((prev) => [
           { ...newTask, description: formData.description },
           ...prev,

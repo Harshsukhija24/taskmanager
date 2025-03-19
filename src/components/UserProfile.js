@@ -109,7 +109,6 @@ const UserProfile = ({ showInSidebar = true }) => {
     );
   }
 
-  // Show fewer users in sidebar mode
   const displayUsers = showInSidebar ? users.slice(0, 5) : users;
 
   return (

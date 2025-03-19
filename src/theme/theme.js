@@ -1,6 +1,5 @@
 import { createTheme } from "@mui/material/styles";
 
-// Base theme settings shared between light and dark themes
 const baseThemeSettings = {
   typography: {
     fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',

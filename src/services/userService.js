@@ -2,7 +2,6 @@ import axios from "axios";
 
 const API_URL = "https://randomuser.me/api";
 
-// Predefined roles for random assignment
 const roles = [
   "Project Manager",
   "Developer",

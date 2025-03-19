@@ -6,7 +6,6 @@ export const AuthProvider = ({ children }) => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   const login = (credentials) => {
-    // For demo purposes, using static credentials
     if (
       credentials.username === "admin" &&
       credentials.password === "admin123"

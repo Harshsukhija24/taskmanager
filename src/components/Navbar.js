@@ -37,7 +37,6 @@ const Navbar = ({
     navigate("/");
   };
 
-  // Define background styles based on theme
   const getBackgroundStyle = () => {
     if (darkMode) {
       return {
@@ -45,7 +44,6 @@ const Navbar = ({
         color: theme.palette.common.white,
       };
     } else {
-      // Light mode - gradient background
       return {
         background: "linear-gradient(90deg, #1976d2 0%, #2196f3 100%)",
         color: theme.palette.common.white,

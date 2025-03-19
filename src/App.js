@@ -12,7 +12,6 @@ import { AuthProvider, useAuth } from "./contexts/AuthContext";
 import LoginPage from "./pages/LoginPage";
 import DashboardPage from "./pages/DashboardPage";
 
-// Error boundary class to capture and display errors gracefully
 class ErrorBoundary extends Component {
   constructor(props) {
     super(props);
